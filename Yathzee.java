@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Yathzee {
@@ -6,6 +7,7 @@ public class Yathzee {
 		
 		YahtzeeSpel spel = new YahtzeeSpel();
 		spel.spelen();
+		
 		
 	}//end main	
 }//end class Yathzee
@@ -33,5 +35,11 @@ class YahtzeeSpel {
 				}//end switch
 		}//end while
 	}//end methode spelen
+	
+	int werpen(){
+		Random random = new Random();
+		int worp = random.nextInt(6)+1;
+		return worp;
+	}//end werpen
 	
 }//end class YahtzeeSpel
