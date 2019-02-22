@@ -4,6 +4,16 @@ public class Yathzee {
 
 	public static void main(String[] args) {
 		
+		YahtzeeSpel spel = new YahtzeeSpel();
+		spel.spelen();
+		
+	}//end main	
+}//end class Yathzee
+
+class YahtzeeSpel {
+	
+	
+	void spelen() {
 		int stoppen = 0;
 		
 		while(stoppen == 0) {
@@ -20,10 +30,8 @@ public class Yathzee {
 					stoppen ++;
 					break;
 			
-			}//end switch
+				}//end switch
 		}//end while
-		
-	}//end main
+	}//end methode spelen
 	
-	
-}//end class Yathzee
+}//end class YahtzeeSpel
